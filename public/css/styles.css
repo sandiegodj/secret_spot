@@ -1,0 +1,100 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+ 
+* {
+ font-size: 100%;
+ font-family: "Helvitica Neue", "Helvitica", Helvitica, Arial, Sans Serif;
+}
+
+#submit
+{
+ position: relative;
+    top:7px; 
+}
+#middle span
+{
+    position: relative;
+    top:85px; 
+}
+
+div.centre
+{
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.alnleft 
+{ 
+    text-align: left; 
+}
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.textbox
+{
+width: 140px; height: 25px
+}
+.submit
+{
+    position: relative;
+    top:30px;
+}
+
+#top
+{
+    position: relative;
+    top:8px;
+}
+#middle
+{
+    position: relative;
+    top:50px;
+}
+#description
+{
+    position: relative;
+    top:18px;   
+}
+span
+{
+position: relative;
+    top:15px;  
+}
+#condition
+{
+    position: relative;
+    top:8px;
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+    
+    position: relative;
+    top:115px
+}
