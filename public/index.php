@@ -6,16 +6,6 @@
     // if form was submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-        // validate submission
-        if (empty($_POST["username"]))
-        {
-            apologize("You must provide your username.");
-        }
-        else if (empty($_POST["password"]))
-        {
-            apologize("You must provide your password.");
-        }
-
         // query database for user
         $rows = query("SELECT * FROM users WHERE username = ?", $_POST["username"]);
 
@@ -35,14 +25,11 @@
                 redirect("/insert.php");
             }
         }
-
-        // else apologize
-        apologize("Invalid username and/or password.");
     }
     else
     {
         // else render form
-        render("index.php", ["title" => "Log In"]);
+        render("login_form.php", ["title" => "Log In"]);
     }
 
 ?>

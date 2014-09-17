@@ -17,4 +17,4 @@
 </div>
 <div>
 <a href="mail.php">Forgot password?</a>
-</div>ju
+</div>
