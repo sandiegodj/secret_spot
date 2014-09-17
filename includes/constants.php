@@ -1,24 +1,16 @@
 <?php
 
-    /**
-     * constants.php
-     *
-     * Computer Science 50
-     * Problem Set 7
-     *
-     * Global constants.
-     */
 
-    // your database's name
-    define("DATABASE", "Final");
+    // database
+    define("DATABASE", "a7192513_secrets");
 
-    // your database's password
-    define("PASSWORD", "crimson");
+    // password
+    define("PASSWORD", "L()ck$Dup");
 
-    // your database's server
-    define("SERVER", "localhost");
+    // server
+    define("SERVER", "mysql6.000webhost.com");
 
-    // your database's username
-    define("USERNAME", "jharvard");
+    // username
+    define("USERNAME", "a7192513_dj2014");
 
 ?>
