@@ -1,11 +1,11 @@
 <?php
     // configuration
-    require("../includes/config.php");
+    require("./includes/config.php");
 
     // if form was submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
     
-        if ($_POST["secret"] == "You shouldn't be here"){
+        if ($_POST["secret"] == "really11"){
 
             //check that password matches confirmation password and
             if ($_POST["password"] == $_POST["confirmation"]){

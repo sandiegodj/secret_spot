@@ -1,7 +1,7 @@
 <?php
 
     // configuration
-    require("../includes/config.php"); 
+    require("./includes/config.php"); 
 
     // if form was submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST")
@@ -22,7 +22,7 @@
                 $_SESSION["id"] = $row["id"];
 
                 // redirect to portfolio
-                redirect("/insert.php");
+                redirect("./insert.php");
             }
         }
     }

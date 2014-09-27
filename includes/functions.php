@@ -1,14 +1,5 @@
 <?php
 
-    /**
-     * functions.php
-     *
-     * Computer Science 50
-     * Problem Set 7
-     *
-     * Helper functions.
-     */
-
     require_once("constants.php");
     include('simple_html_dom.php');
     /**
@@ -44,12 +35,13 @@
     {   
 
     //determining my wind and buoy variables here.
-    //might change scripps to torrey pines buoy and sunset cliffs to mission bay buoy    
+    //pretty much have every spot running off mission bay or point loma
+    //so remember just reference those buoy's.    
   
     if ($spot == 'Scripps') // La Jolla
     {
         $w_station = 'ME3170';
-        $buoy = '20098';
+        $buoy = '46231';
     }
     else if ($spot == 'Blacks')
     {
@@ -85,16 +77,7 @@
         
     //TODO if $stuff contains 'No data available'  buoy is down and throw bouy is down error page.
         
-    if ($spot == 'Scripps')
-    {
-    $stuff = str_replace('m','ft', $stuff);
-    $lines = explode('s', $stuff);
-    $lines[0] = $lines[0].= 's';
-    //Add a check here to see if the bouy is down....
-    $lines[1] = $lines[1].= 's';
-    $lines[2] = $lines[2].= 's';
-    }
-    else{ 
+
     $stuff = str_replace('&deg;', '', $stuff);
     $stuff = str_replace('from', '@', $stuff);
     $stuff = str_replace('m', 'ft', $stuff);
@@ -103,8 +86,8 @@
     $lines[0] = $lines[0].= ')';
     $lines[1] = $lines[1].= ')';
     $lines[2] = $lines[2].= ')';
-    }
-        $html->clear();
+
+    $html->clear();
     
     //get wind data json and decode
     $handle = file_get_contents("http://api.wunderground.com/api/1fdd3f808375fd75/conditions/q/pws:$w_station.json");
@@ -237,19 +220,19 @@
     function render($template, $values = [])
     {
         // if template exists, render it
-        if (file_exists("../templates/$template"))
+        if (file_exists("./templates/$template"))
         {
             // extract variables into local scope
             extract($values);
 
             // render header
-            require("../templates/header.php");
+            require("./templates/header.php");
 
             // render template
-            require("../templates/$template");
+            require("./templates/$template");
 
             // render footer
-            require("../templates/footer.php");
+            require("./templates/footer.php");
         }
 
         // else err

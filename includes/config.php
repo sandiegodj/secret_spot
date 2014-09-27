@@ -10,7 +10,7 @@
     // enable sessions
     session_start();
     // require authentication for most pages
-    if (!preg_match("{(?:login|logout|register|dump|apologize|lookup)\.php$}", $_SERVER["PHP_SELF"]))
+    if (!preg_match("{(?:login|logout|register|dump|apologize)\.php$}", $_SERVER["PHP_SELF"]))
     {
         if (empty($_SESSION["id"]))
         {

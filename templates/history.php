@@ -6,6 +6,7 @@
 <thead>
     <tr>
         <th>Rating</th>
+        <th>Height</th>
         <th>Conditions</th>
         <th>Swell 1</th>
         <th>Swell 2</th>
@@ -21,6 +22,7 @@
 
     <tr>
         <td class="alnleft"><?= $row["rating"] ?></td>
+        <td class="alnleft"><?= $row["height"] ?></td>
         <td class="alnleft"><?= $row["conditions"] ?></td>
         <td class="alnleft"><?= $row["swell_p"] ?></td>
         <td class="alnleft"><?= $row["swell_s"] ?></td>
