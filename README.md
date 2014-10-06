@@ -10,11 +10,8 @@ Data is currently kept private for each user in order to keep your secret spot s
 Plans for the future include:
 
 1. Refactor using rails
-2. 
 2. Allowing users to form groups and share their data amongst themselves.
-3. 
 3. Utilize Google maps api to drop pins on your particular surf spot and base bouy on pin location.
-4. 
 4. Flexible display table that lets you shuffle your data based on rating, swell direction, tide etc. 
 
 
