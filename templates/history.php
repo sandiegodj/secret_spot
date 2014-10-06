@@ -2,7 +2,6 @@
 <h1><?php echo($spot)?></h1>
 
 <table class= "table table_striped">
-<!Maybe take spot out of the menu, and have text on the top saying that this is the data for this particular spot   !>
 <thead>
     <tr>
         <th>Rating</th>

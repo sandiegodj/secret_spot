@@ -2,9 +2,7 @@
 
     require_once("constants.php");
     include('simple_html_dom.php');
-    /**
-     * Apologizes to user with message.
-     */
+
     function apologize($message)
     {
         render("apology.php", ["message" => $message]);
