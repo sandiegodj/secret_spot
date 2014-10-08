@@ -1,6 +1,6 @@
 secret_spot
 ===========
-This is my final project for the Harvardx CS50x course.  
+This is my final project for the Harvardx CS50x course. It utilizes a Harvard-made MVC framework 
 It allows surfers to travel to their local surf spot and rate the current surf conditions.
 These rating are then stored to their account alongside the current buoy, tide and wind readings.
 Surfer can then view current bouys and tide info on forcast sites and compare with their database to have a better predictor of which spot to drive to, saving gas and creating a better world for our children.
