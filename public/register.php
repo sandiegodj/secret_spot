@@ -4,8 +4,8 @@
 
     // if form was submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    
-        if ($_POST["secret"] == "really11"){
+        // sorry, private alpha.  this does not work.
+        if ($_POST["secret"] == ""){
 
             //check that password matches confirmation password and
             if ($_POST["password"] == $_POST["confirmation"]){
@@ -14,22 +14,22 @@
                 
                 if($query === false)
                 {
-                apologize("Sorry, that username already exists fool.");
+                apologize("Oops.");
                 }
 
                 $rows = query("SELECT id FROM users WHERE username = ?", $_POST["username"]);
                 $_SESSION["id"] = $rows[0]["id"];
-                //redirect back to index
+                //redirect
                 redirect("insert.php");        
             }
             else
             {
-                apologize();
+                apologize("Oops.");
             }
         }
         else 
         {
-            apologize();
+            apologize("Oops.");
         }
     }
     else

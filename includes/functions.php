@@ -1,4 +1,5 @@
 <?php
+    // Most of these are helper methods provided by cs50.
 
     require_once("constants.php");
     include('simple_html_dom.php');
@@ -28,7 +29,7 @@
         session_destroy();
     }
 
-
+    //Except this one
     function lookup($spot)
     {   
 
@@ -112,12 +113,9 @@
             "swell_s" => $lines[1],
             "swell_t" => $lines[2],
             "tide" => $tide,
-        ];
-      
-
-        // close connection to Yahoo
-        
-        
+            ];
+    
+             
 
     }
     /**

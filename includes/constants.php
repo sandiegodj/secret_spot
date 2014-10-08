@@ -4,12 +4,12 @@
     define("DATABASE", "secretspot");
 
     // your database's password
-    define("PASSWORD", "Really1?");
+    define("PASSWORD", "");
 
     // your database's server
-    define("SERVER", "sql.secretspot.us");
+    define("SERVER", "");
 
     // your database's username
-    define("USERNAME", "davjan58");
+    define("USERNAME", "");
 
 ?>
