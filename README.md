@@ -4,9 +4,9 @@ This is my final project for the Harvardx CS50x course. It utilizes a Harvard-ma
 
 The app acts a "journal" of sort for the hardcore surfer who might keep a pen and paper journal of spot info, swell direction, interval ect.
 
-Now just visit the site while viewing the surf and enter your subjective surf report, filling in fields like size, rating etc.  The app will than query different sites and store your surf report alongside the current swell direction, interval, size, as well as local wind and tide information for true and realtime data. 
+Now just visit the site while viewing the surf and enter your subjective surf report, filling in fields like size, rating etc.  The app will then store your surf report alongside the current swell direction, interval, size, as well as local wind and tide information for true and realtime data. 
 
-Keep filling in the site, and eventually you might be looking at the surf forecast and see that a nice 301 degrees NW swell at 20 s is coming in.  Just reference your data to see which spot breaks the best given these conditions and enjoy your surf.  
+One day you might be looking at the surf forecast and see that a nice 301 degrees NW swell at 20 s is coming in.  Just reference your data to see which spot breaks the best given these conditions and enjoy your surf.  
 
 
 Data is currently kept private for each user in order to keep your secret spot secret.    
