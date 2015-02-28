@@ -2,10 +2,6 @@ secret_spot
 ===========
 This is my final project for Harvard's CS50x course.
 
-The app acts a "journal" of sort for the hardcore surfer who might keep a pen and paper journal of spot info, swell direction, interval ect.
-
-One day you might be looking at the surf forecast and see that a nice 301 degrees NW swell at 20 s is coming in.  Just reference your data to see which spot breaks the best given these conditions and enjoy your surf.  
-
 
 Plans for the future include:
 
